@@ -1,7 +1,17 @@
-const express = require("express")
-const dotenv  = require( "dotenv");
-const mongoose = require("mongoose");
-const talks = require("./models/talks.model");
+import express from "express";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import oppo from "./models/opportunities.model.js";
+import editorial from "./models/editorials.model.js";
+import leetcode from "./models/Leetcode.model.js";
+import gfg from "./models/gfg.model.js";
+import upcontest from "./models/upcontests.model.js";
+import talks from "./models/talks.model.js";
+// import UserModel from "./Data/Login.js";
+import cors from "cors";
+import jwt from "jsonwebtoken";
+import cookieParser from "cookie-parser";
+import nodemailer from "nodemailer";
 // import cors from "cors";
 // import jwt from "jsonwebtoken";
 // import cookieParser from "cookie-parser";
